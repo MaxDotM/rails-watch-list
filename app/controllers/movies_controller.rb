@@ -11,7 +11,7 @@ class MoviesController < ApplicationController
     @movie = Movie.new
   end
 
-  def create_table
+  def create
     @movie = Movie.new(movie_params)
     if @movie.save
       redirect_to movies_path
@@ -31,7 +31,6 @@ class MoviesController < ApplicationController
 
   def destroy
     @movie.destroy
-
     redirect_to movies_path
   end
 

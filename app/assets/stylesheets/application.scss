@@ -6,7 +6,8 @@
 // External libraries
 @import "bootstrap";
 @import "font-awesome";
-
+@import "config/elements";
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "lists/index";
