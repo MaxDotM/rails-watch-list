@@ -2,6 +2,7 @@ require 'json'
 require 'open-uri'
 
 puts 'Destroying all files'
+List.destroy_all
 Movie.destroy_all
 
 url = 'http://tmdb.lewagon.com/movie/top_rated'
